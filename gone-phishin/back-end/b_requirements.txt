@@ -1,0 +1,2 @@
+cd back-end
+pip install flask
