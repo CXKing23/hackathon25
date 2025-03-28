@@ -1,2 +1,3 @@
 cd back-end
 pip install flask
+pip install openai
