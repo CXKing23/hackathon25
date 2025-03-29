@@ -12,7 +12,7 @@ This project is a phishing email detection tool designed for **Delaware State Un
 ---
 
 ## Features
-- **Email Upload**: Upload `.eml` email files to check for phishing.
+- **Email Upload**: Upload `.eml` email files or input text to check for phishing.
 - **Phishing Detection**: Automatically checks emails for suspicious links, sender information, and phishing indicators.
 - **Real-time Notifications**: Receive warnings before interacting with potential phishing emails.
 - **Custom Sensitivity Levels**: Set the level of detection based on the user's preferences.
