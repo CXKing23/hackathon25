@@ -152,5 +152,5 @@ if __name__ == '__main__':
         exit(1)
     
     # Start the server, set debug=True during development only
-    print("Starting Flask server...")
+    print("\nStarting Flask server...\n")
     app.run(debug=True, host='0.0.0.0', port=5000)
