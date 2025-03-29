@@ -1,14 +1,12 @@
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .ogo {
     animation: App-logo-spin infinite 1s linear;
   }
 }
@@ -28,6 +26,21 @@
   color: #61dafb;
 }
 
+.App-link:hover {
+  color: #21a1f1;
+}
+.Logo {
+  height: 30vmin;
+  width: auto;
+  pointer-events: none;
+  border-color: black;
+  position: relative;
+  top: 380px;
+  right : 190px;
+  
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +48,27 @@
   to {
     transform: rotate(360deg);
   }
+
+  
 }
+.Spin {
+  animation: App-logo-spin 2s linear;
+}
+/* Blinking animation for the loading text */
+.loading-text {
+  position: absolute; /* Position relative to the parent container */
+  top: 380px;
+  left : 600px;
+  animation: blink 2s step-start infinite;
+  color: #61dafb; /* Adjust color as needed */
+  font-weight: bold;
+  font-size: 1.2rem; /* Adjust size as needed */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
