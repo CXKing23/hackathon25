@@ -7,7 +7,7 @@ This project is a phishing email detection tool designed for **Delaware State Un
 ### **Tech Stack**
 - **Frontend**: React
 - **Backend**: Flask (Python)
-- **Phishing Detection**: Python libraries for email parsing and rule-based logic or ML models.
+- **Phishing Detection**: Using Google's Gemini AI for email parsing and phishing detection.
 
 ---
 
