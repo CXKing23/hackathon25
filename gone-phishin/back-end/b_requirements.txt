@@ -1,3 +1,2 @@
 cd back-end
-pip install flask
-pip install openai
+pip install flask flask-cors google-generativeai python-dotenv
