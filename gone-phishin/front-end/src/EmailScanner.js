@@ -75,6 +75,7 @@ const EmailScanner = () => {
         onClick={handleScan}  // Trigger handleScan when clicked
         disabled={loading}    // Disable button while scanning is in progress
         style={{ marginTop: '1rem', padding: '0.5rem 1rem' }}
+      className="ScanEmail"
       >
         {loading ? 'Scanning...' : 'Scan Email'}  {/* Show loading text if scanning */}
       </button>
