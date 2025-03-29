@@ -1,74 +1,125 @@
-body {
-  background-color: #1a1d24;
-}
 .App {
   text-align: center;
 }
-
-
-* {color: white}
-.ScanEmail{
-  color:black
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .Logo {
-    animation: App-logo-spin infinite 1s linear;
-  }
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
-
-.App-header {
-  background-color: #ffffff;
+App-header {
+  background-color: #f4f4f4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(62, 103, 161);
+  color: #333;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.App-link:hover {
-  color: #21a1f1;
-}
-.Logo {
-  height: 30vmin;
-  width: auto;
-  pointer-events: none;
-  border-color: rgb(255, 255, 255);
-  position: relative;
-  top: 380px;
-  right : 190px;
-  
+.instructions {
+  color: #777;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-
-  
+.file-upload {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.Spin {
-  animation: App-logo-spin 2s linear;
+
+.file-upload input[type="file"] {
+  display: none;
 }
-/* Blinking animation for the loading text */
+
+.file-upload label {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  border: 2px dashed #ccc;
+  width: 80%;
+  max-width: 400px;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.text-input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .loading-text {
-  position: absolute; /* Position relative to the parent container */
-  top: 380px;
-  left : 600px;
+  position: absolute;
   animation: blink 2s step-start infinite;
-  color: #61dafb; /* Adjust color as needed */
+  color: #61dafb;
   font-weight: bold;
-  font-size: 1.2rem; /* Adjust size as needed */
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 @keyframes blink {
@@ -77,5 +128,31 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .file-upload label {
+    font-size: 1rem;
+    padding: 15px;
+  }
 
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 
+  .text-input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+.Logo {
+  transition: transform 0.5s ease-in-out;
+}
+
+.Logo.spin {
+  transform: rotate(360deg);
+}
+
+.loading-text {
+  font-style: italic;
+  font-size: 16px;
+}
