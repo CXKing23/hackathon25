@@ -1,2 +1,6 @@
+<<<<<<< HEAD
+cd
+=======
 cd back-end
 pip install flask flask-cors google-generativeai python-dotenv
+>>>>>>> main
