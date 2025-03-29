@@ -1,25 +1,31 @@
-
+body {
+  background-color: #1a1d24;
+}
 .App {
   text-align: center;
 }
 
 
+* {color: white}
+.ScanEmail{
+  color:black
+}
 
 @media (prefers-reduced-motion: no-preference) {
-  .ogo {
+  .Logo {
     animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(62, 103, 161);
 }
 
 .App-link {
@@ -33,7 +39,7 @@
   height: 30vmin;
   width: auto;
   pointer-events: none;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   position: relative;
   top: 380px;
   right : 190px;
@@ -70,5 +76,6 @@
     opacity: 0;
   }
 }
+
 
 
